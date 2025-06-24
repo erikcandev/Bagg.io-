@@ -23,7 +23,7 @@ Este projeto é um sistema web para gestão de bens patrimoniais, conferências,
   - Marque observações como "Baixado", "Não localizado" ou "Cadastrado em outra filial"
   - Finalize ou exclua conferências
 - **Gestão de Usuários**
-  - Cadastro, edição, exclusão e permissões (admin/usuário)
+  - Cadastro, edição, exclusão e permissões (admin/gestor/usuário)
 - **Gestão de Filiais**
   - Cadastro, edição (nome, endereço, contato, cidade, CEP) e exclusão de filiais
   - A primeira filial criada é marcada como "Sede"
@@ -33,7 +33,6 @@ Este projeto é um sistema web para gestão de bens patrimoniais, conferências,
   - Estatísticas de bens, valor total, gráficos e resumo por filial
 - **Login e Permissões**
   - Login com controle de sessão e permissões de acesso
-  - Usuários padrão: `admin@teste.com` e `usuario@teste.com` (senha: `123`)
 - **Tema Personalizado**
   - Visual moderno, dark/light mode com alternância no topo
   - Responsivo para mobile e desktop
@@ -79,20 +78,21 @@ O sistema possui três tipos de usuários, cada um com permissões específicas:
   - Pode cadastrar, editar e excluir usuários e filiais
   - Pode cadastrar, editar, excluir bens e conferências
   - Visualiza todos os menus
-  - Usuário padrão: `admin@teste.com` (senha: `123`)
+ 
 
 - **Gestor**
   - Pode cadastrar, editar e excluir bens e conferências
   - NÃO pode cadastrar, editar ou excluir usuários e filiais
   - Não visualiza os menus de "Usuários" e "Configurações"
-  - Usuário padrão: `gestor@teste.com` (senha: `123`)
+ 
 
 - **Usuário**
   - Apenas visualiza bens, conferências, movimentações, filiais e usuários
   - NÃO pode cadastrar, editar ou excluir nada
   - Não visualiza botões de ação (Novo, Editar, Excluir, Importar, Exportar, etc.)
-  - Usuário padrão: `usuario@teste.com` (senha: `123`)
+  
 
 ## Créditos
 Desenvolvido por Erik Domingos Candido
+
 Contato: erikcandido93@gmail.com
