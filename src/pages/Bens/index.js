@@ -401,12 +401,11 @@ function Bens() {
         <Table>
           <TableHead>
             <TableRow>
+              <TableCell>Filial</TableCell>
               <TableCell>Número Patrimonial</TableCell>
               <TableCell>Nome</TableCell>
-              <TableCell>Filial</TableCell>
-              <TableCell sx={{ display: { xs: 'none', sm: 'table-cell' } }}>Início de uso</TableCell>
-              <TableCell sx={{ display: { xs: 'none', sm: 'table-cell' } }}>Valor</TableCell>
               <TableCell>Status</TableCell>
+              <TableCell sx={{ display: { xs: 'none', sm: 'table-cell' } }}>Início de uso</TableCell>
               <TableCell sx={{ display: { xs: 'none', sm: 'table-cell' } }}>Data da Baixa</TableCell>
               <TableCell align="right">Ações</TableCell>
             </TableRow>
@@ -421,12 +420,11 @@ function Bens() {
                     : { backgroundColor: '#ffebee' }
                   : {}}
               >
+                <TableCell style={bem.status === 'Baixado' && theme.palette.mode === 'dark' ? { color: '#fff' } : {}}>{bem.agencia}</TableCell>
                 <TableCell style={bem.status === 'Baixado' && theme.palette.mode === 'dark' ? { color: '#fff' } : {}}>{bem.numeroPatrimonio}</TableCell>
                 <TableCell style={bem.status === 'Baixado' && theme.palette.mode === 'dark' ? { color: '#fff' } : {}}>{bem.nome}</TableCell>
-                <TableCell style={bem.status === 'Baixado' && theme.palette.mode === 'dark' ? { color: '#fff' } : {}}>{bem.agencia}</TableCell>
-                <TableCell sx={{ display: { xs: 'none', sm: 'table-cell' } }} style={bem.status === 'Baixado' && theme.palette.mode === 'dark' ? { color: '#fff' } : {}}>{bem.inicioUso}</TableCell>
-                <TableCell sx={{ display: { xs: 'none', sm: 'table-cell' } }} style={bem.status === 'Baixado' && theme.palette.mode === 'dark' ? { color: '#fff' } : {}}>R$ {bem.valor}</TableCell>
                 <TableCell style={bem.status === 'Baixado' && theme.palette.mode === 'dark' ? { color: '#fff' } : {}}>{bem.status}</TableCell>
+                <TableCell sx={{ display: { xs: 'none', sm: 'table-cell' } }} style={bem.status === 'Baixado' && theme.palette.mode === 'dark' ? { color: '#fff' } : {}}>{bem.inicioUso}</TableCell>
                 <TableCell sx={{ display: { xs: 'none', sm: 'table-cell' } }} style={bem.status === 'Baixado' && theme.palette.mode === 'dark' ? { color: '#fff' } : {}}>
                   {bem.status === 'Baixado' && bem.dataBaixa ? formatarDataApenasDia(bem.dataBaixa) : ''}
                 </TableCell>
